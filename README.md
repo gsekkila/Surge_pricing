@@ -16,10 +16,12 @@ Companies can also use this data to introduce features like low fares during off
 
 [Presentaion Link](https://docs.google.com/presentation/d/1k4JkmKybe1vA3XIKXbkomEsgG9qJASuMiKjh6ghnXZA/edit?usp=sharing)
 
-<hr/>
-
+## Output
+![alt text](https://github.com/gsekkila/Surge_pricing/blob/master/Images/output.gif)
 
 ## Architecture
+![alt text](https://github.com/gsekkila/Surge_pricing/blob/master/Images/techstack.png)
+My dataset is in S3. I’m using Kafka for ingesting the real-time data and sending it to Spark. Processing tasks such as clustering the locations, and calculating price multiplier count are all done in spark. From spark, I’m sending the processed data to Redis and PostgreSQL database. PostgreSQL is used for permanent storage of the data. Redis is used as a temporary in-memory storage for the processed data and is used for accessing the data by the visualization tool dash
 
 ## Dataset
 
