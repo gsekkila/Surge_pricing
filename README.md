@@ -29,4 +29,8 @@ I'm using the taxi trip dataset from the City of Chicago [website.](https://data
 
 ## Engineering challenges
 ### Clustering Locations
+One of the difficulties that I faced is determining which requests are nearby. Since data comes in a high velocity there is very little time to cluster the locations and calculate the multiplier count. I started with calculating the distance between each points using euclidean distance. This took alot of processing time.
+![alt text](https://github.com/gsekkila/Surge_pricing/blob/master/Images/chal1.png)
+I ended up solving this by forming a radius around a location to determine which other ride requests affect the current request. The radius is 0.5km/0.3mi. This reduced the processing time from calculating the distance to just checking if the doppin is within the radius.
+![alt text](https://github.com/gsekkila/Surge_pricing/blob/master/Images/chal2.png)
 ### Redis database access
