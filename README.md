@@ -34,3 +34,6 @@ One of the difficulties that I faced is determining which requests are nearby. S
 I ended up solving this by forming a radius around a location to determine which other ride requests affect the current request. The radius is 0.5km/0.3mi. This reduced the processing time from calculating the distance to just checking if the doppin is within the radius.
 ![alt text](https://github.com/gsekkila/Surge_pricing/blob/master/Images/chal2.png)
 ### Redis database access
+Initially, I was using different database tools. I chose to PostgreSQL. It does a great job of storing data. But I wanted to use a much faster tool for accessing the data. That’s how I decided to use Redis. It is a cache-based database. It works on RAM memory so it is much faster compared to other relational databases.
+Redis is a temporary storage solution for quick retrieval of information and PostgreSQL acts as a permanent storage of real time data  so it can be used in the future by other engineers for the analysis of historical data
+#### Benchmarks
