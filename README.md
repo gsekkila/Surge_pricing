@@ -37,3 +37,5 @@ I ended up solving this by forming a radius around a location to determine which
 Initially, I was using different database tools. I chose to PostgreSQL. It does a great job of storing data. But I wanted to use a much faster tool for accessing the data. That’s how I decided to use Redis. It is a cache-based database. It works on RAM memory so it is much faster compared to other relational databases.
 Redis is a temporary storage solution for quick retrieval of information and PostgreSQL acts as a permanent storage of real time data  so it can be used in the future by other engineers for the analysis of historical data
 #### Benchmarks
+![alt text](https://github.com/gsekkila/Surge_pricing/blob/master/Images/bench1.png)
+![alt text](https://github.com/gsekkila/Surge_pricing/blob/master/Images/bench2.png)
