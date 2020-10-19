@@ -34,15 +34,8 @@ data = data.map(lambda y: y.split(','))
 lat = data.map(lambda x: x[0])
 long = data.map(lambda x:x[1])
 
-#long = long.foreachRDD(lambda rdd: rdd.toDF())
-#print(long)
 data.pprint()
 data.foreachRDD(lambda rdd: rdd.toDF().write.format("org.apache.spark.sql.redis").option("table","location").option("key.column","_1").save(mode='append'))
-#lat.foreachRDD(lambda rdd: rdd.toDF().write.format("org.apache.spark.sql.redis").option("table","latitude").save(mode='append'))
-#long.foreachRDD(lambda rdd: rdd.toDF().write.format("org.apache.spark.sql.redis").option("table","longitude").option("key.column","_0").save(mode='append'))
 
-#lat = parsed.map(lambda x: x.split(","))
-
-#lat.pprint()
 ssc.start()
 ssc.awaitTermination()
