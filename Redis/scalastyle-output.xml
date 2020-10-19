@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.0">
+ <file name="/home/ubuntu/spark-redis/src/main/scala/com/redislabs/provider/redis/redisFunctions.scala">
+  <error column="2" line="338" source="org.scalastyle.scalariform.DeprecatedJavaChecker" severity="warning" message="@deprecated should be used instead of @java.lang.Deprecated"/>
+ </file>
+ <file name="/home/ubuntu/spark-redis/src/test/scala/com/redislabs/provider/redis/env/RedisStandaloneSSLEnv.scala">
+  <error column="0" line="9" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+ </file>
+ <file name="/home/ubuntu/spark-redis/src/main/scala/com/redislabs/provider/redis/RedisConfig.scala">
+  <error line="31" source="org.scalastyle.file.FileLineLengthChecker" severity="warning" message="File line length exceeds 120 characters"/>
+  <error line="49" source="org.scalastyle.file.FileLineLengthChecker" severity="warning" message="File line length exceeds 120 characters"/>
+  <error line="59" source="org.scalastyle.file.FileLineLengthChecker" severity="warning" message="File line length exceeds 120 characters"/>
+ </file>
+ <file name="/home/ubuntu/spark-redis/src/main/scala/com/redislabs/provider/redis/util/ParseUtils.scala">
+  <error line="3" source="org.scalastyle.file.FileLineLengthChecker" severity="warning" message="File line length exceeds 120 characters"/>
+ </file>
+ <file name="/home/ubuntu/spark-redis/src/main/scala/org/apache/spark/sql/redis/RedisSourceRelation.scala">
+  <error line="10" source="org.scalastyle.file.FileLineLengthChecker" severity="warning" message="File line length exceeds 120 characters"/>
+ </file>
+ <file name="/home/ubuntu/spark-redis/src/main/scala/com/redislabs/provider/redis/streaming/package.scala">
+  <error column="15" line="3" source="org.scalastyle.scalariform.EmptyClassChecker" severity="warning" message="Redundant braces after class definition"/>
+ </file>
+ <file name="/home/ubuntu/spark-redis/src/main/scala/com/redislabs/provider/redis/rdd/RedisRDD.scala">
+  <error line="234" source="org.scalastyle.file.FileLineLengthChecker" severity="warning" message="File line length exceeds 120 characters"/>
+ </file>
+ <file name="/home/ubuntu/spark-redis/src/main/scala/org/apache/spark/sql/redis/stream/RedisSource.scala">
+  <error line="46" source="org.scalastyle.file.FileLineLengthChecker" severity="warning" message="File line length exceeds 120 characters"/>
+ </file>
+</checkstyle>
