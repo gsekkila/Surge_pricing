@@ -8,7 +8,7 @@ from json import dumps
 import json
 import numpy as np
 
-client = boto3.client('s3',aws_access_key_id = 'AKIAIIMFOAGXD77MOKEA', aws_secret_access_key='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')
+client = boto3.client('s3',aws_access_key_id = '######', aws_secret_access_key='####')
 
 resource = boto3.resource('s3')
 bucket = resource.Bucket('taxitripdata')
